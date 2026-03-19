@@ -1,0 +1,16 @@
+﻿version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=
+      - PAYOS_CLIENT_ID=
+      - PAYOS_API_KEY=
+      - PAYOS_CHECKSUM_KEY=
+      - PUBLIC_BASE_URL=
+      - DB_NAME=/app/data/store.db
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

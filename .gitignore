@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# Local env / secrets
+.env
+.env.local
+
+# Database / data
+data/
+store
+store.db
+*.sqlite3
+
+# ngrok / binaries / zips
+ngrok
+ngrok*
+*.zip
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node / build
+node_modules/
+dist/
